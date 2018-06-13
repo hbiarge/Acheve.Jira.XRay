@@ -1,8 +1,7 @@
 {
   "profiles": {
     "Acheve.Jira.XRay": {
-      "commandName": "Project",
-      "commandLineArgs": "upload-results -h https://tools.adidas-group.com/jira -u svc_dadassetmgr_dev -p HRjc38iufMP[WPU= -t DDAM-757"
+      "commandName": "Project"
     }
   }
 }

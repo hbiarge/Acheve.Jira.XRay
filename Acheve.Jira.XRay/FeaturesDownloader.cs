@@ -22,10 +22,7 @@ namespace Acheve.Jira.XRay
             var client = new HttpClient();
 
             var relativePath = string.Format(RelativePath, _options.TestPlan);
-
-            var path = _options.Host.EndsWith("/")
-                ? _options.Host + relativePath
-                : _options.Host + "/" + relativePath;
+            var path = Helper.BuildUri(_options.Host, relativePath);
 
             var request = new HttpRequestMessage(
                 method: HttpMethod.Get,
